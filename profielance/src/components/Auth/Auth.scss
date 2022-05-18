@@ -1,0 +1,16 @@
+.modal{
+  display: flex;
+  justify-content: center;
+ 
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+  }
+}
+.error{
+  color:red;
+  text-align: center;
+}
