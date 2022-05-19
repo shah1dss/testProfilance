@@ -1,7 +1,10 @@
 .modal{
   display: flex;
   justify-content: center;
- 
+  &-title{
+    font-size: 25px;
+    text-align: center;
+  }
   &__wrapper{
     display: flex;
     flex-direction: column;

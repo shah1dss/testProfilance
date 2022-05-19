@@ -6,14 +6,12 @@ function Home() {
   const { user } = useSelector((state) => state.userReducer);
   return (
     <div className="home">
-      <h1>Главная</h1>
+      <h1 className="title home__title">Главная</h1>
       {user?.role ? (
-        <p>
-          Привет
-          &nbsp;&nbsp;
-          {user.login}
+        <p className="home-text">
+          {`Добро пожаловать ${user.login}`}
         </p>
-      ) : <p>Привет гость</p>}
+      ) : <p className="home-text">Добро пожаловать гость</p>}
 
     </div>
   );

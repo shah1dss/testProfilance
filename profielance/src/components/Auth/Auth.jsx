@@ -46,13 +46,13 @@ function Auth() {
     >
       <div className="modal">
         <div className="modal__wrapper">
-          <h3 className="title">Авторизация</h3>
+          <h3 className="modal-title">Авторизация</h3>
           {show ? <span className="error">{error}</span> : ''}
-          <label htmlFor="loginInput" className="modal__input-lable">Логин:</label>
-          <input id="loginInput" type="text" ref={loginUser} className="modal__input" />
-          <label htmlFor="passwordInput" className="modal__input-lable">Пароль:</label>
-          <input id="passwordInput" type="password" ref={passwordUser} className="modal__input" />
-          <button type="button" className="modal__button" onClick={auth}>Войти</button>
+          {/* <label htmlFor="loginInput" className="modal__input-lable">Логин:</label> */}
+          <input id="loginInput" type="text" ref={loginUser} className="input modal__input" placeholder="Введите логин:" />
+          {/* <label htmlFor="passwordInput" className="modal__input-lable">Пароль:</label> */}
+          <input id="passwordInput" type="password" ref={passwordUser} className="input modal__input" placeholder="Введите  пароль:" />
+          <button type="button" className="button modal__button" onClick={auth}>Войти</button>
         </div>
       </div>
     </Popup>

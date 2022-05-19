@@ -3,9 +3,30 @@
   margin: auto;
 }
 .title{
-  font-size: 30px;
+  margin-top: 1rem;
+  font-size: 25px;
   text-align: center;
 }
-.body{
+* {
   margin: 0;
+  padding: 0;
+  font-family: "Roboto",sans-serif;
+ }
+
+.input{
+  font-size: 17px;
+  padding: 2px;
+
+  border: none;
+  border-bottom: 1px solid black;
+}
+.button {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 3px;
+  background: none;
+  margin-top: 1rem;
+  &:hover{
+    background-color: rgba(235, 234, 234,0.5);
+  }
 }

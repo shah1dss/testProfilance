@@ -30,5 +30,6 @@ module.exports = {
         some: ['nesting', 'id'],
       },
     }],
+    'no-param-reassign': [2, { props: false }],
   },
 };
